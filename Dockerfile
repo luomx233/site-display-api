@@ -2,7 +2,7 @@ FROM node:16
 ENV NODE_ENV=production
 WORKDIR /app
 COPY . .
-RUN npm install
+RUN npm config set registry https://registry.npm.taobao.org
 RUN npm run build
-RUN npm run tart:prod
 EXPOSE 7749
+CMD npm install&&npm run build&&npm run start:prod
