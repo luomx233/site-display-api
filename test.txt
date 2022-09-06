@@ -1,0 +1,2 @@
+docker tag projectdisplayapi:1.0.0 lmx233/projectdisplayapi:1.0.0
+docker push lmx233/projectdisplayapi:1.0.0
